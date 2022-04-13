@@ -91,6 +91,17 @@ nav, nav ul{
     display: flex;
   }
 }
+.karuselka{
+  padding-top: 250px;
+  padding-left: 100px;
+}
+.carousel-control-prev{
+  left:-190px;
+}
+.carousel-control-next{
+  right:-100px;
+}
+
 footer {
     width: 100%;
     position: fixed;
