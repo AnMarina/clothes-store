@@ -10,166 +10,62 @@
     <link rel="stylesheet" href="clothes.css">
   </head>
   <body>
-    <section id="header">
+    <!--<section id="header">
       <a href="#" class = "logo"> QRUT</a>
       <div>
         <ul id="navbar">
-          <li><a href="merch.html">Home</a></li>
-          <li><a class="active" href="#">Clothes</a></li>
+          <li><a href="testq.html">Home</a></li>
+          <li><a class="active" href="clothes.html">Clothes</a></li>
           <li><a href="#">Accessories</a></li>
           <li><a href="#">Props</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Cart</a></li>
         </ul>
       </div>
-    </section>
+    </section>-->
+    <nav class="navl" id="myTopnav">
+      <a href="testq.html" class = "logo">Qrut</a>
+    <ul>
+      <li><a href="clothes.html">Clothes</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Props</a></li>
+      <li><a href="login.html">Sign</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a></li>
+    </ul>
+    </nav>
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navl") {
+    x.className += " responsive";
+    } else {
+    x.className = "navl";
+    }
+    }
+    </script>
+    <section class = "banner"></section>
+    <script type="text/javascript">
+      window.addEventListener('scroll', function(){
+        var header = document.querySelector('nav');
+        header.classList.toggle('sticky', window.scrollY > 0)
+      })
+    </script>
 
-<div class="clothes-cards">
-    <div class="row justify-content-between">
-    <div class="col">
-    <div class="card" style="width: 18rem;">
-  <img src="hudi1.jpg" class="card-img-top" alt="marvel">
-  <div class="card-body">
-    <h5 class="card-title">News</h5>
-    <p class="card-text">Stay up to date with the latest news.</p>
-    <a href="#" class="btn btn-dark">More</a>
-  </div>
-  </div>
-  </div>
-  <div class="col">
-      <div class="col">
-      <div class="card" style="width: 18rem;">
-    <img src="hudi2.jpg" class="card-img-top" alt="characters">
-    <div class="card-body">
-      <h5 class="card-title">Shop</h5>
-      <p class="card-text">Find something for you.</p>
-      <a href="#" class="btn btn-dark">More</a>
+    <div class="wrapper">
+      <div id="buttons">
+        <button class="button-value"
+        onclick="filterProduct('Hoodie')">Hoodie</button>
+        <button class="button-value" onclick="filterProduct('Sweatshirt')">Sweatshirt</button>
+        <button class="button-value" onclick="filterProduct('Jeans')">Jeans</button>
+        <button class="button-value" onclick="filterProduct('Shirt')">Shirt</button>
+        <button class="button-value" onclick="filterProduct('Outwear')">Outwear</button>
+      </div>
+      <div id="product"></div>
     </div>
-  </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="col">
-    <div class="card" style="width: 18rem;">
-  <img src="hudi3.jpg" class="card-img-top" alt="movie">
-  <div class="card-body">
-    <h5 class="card-title">It was DreamTeam</h5>
-    <p class="card-text">Find something for you.</p>
-    <a href="#" class="btn btn-dark">More</a>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  <div class="row justify-content-between">
-  <div class="col">
-  <div class="card" style="width: 18rem;">
-<img src="xudi4.jpg" class="card-img-top" alt="marvel">
-<div class="card-body">
-  <h5 class="card-title">News</h5>
-  <p class="card-text">Stay up to date with the latest news.</p>
-   <a href="#" class="btn btn-dark">More</a>
-</div>
-</div>
-</div>
-<div class="col">
-    <div class="col">
-    <div class="card" style="width: 18rem;">
-  <img src="hudi5.jpg" class="card-img-top" alt="characters">
-  <div class="card-body">
-    <h5 class="card-title">Shop</h5>
-    <p class="card-text">Find something for you.</p>
-    <a href="#" class="btn btn-dark">More</a>
-  </div>
-</div>
-  </div>
-</div>
-<div class="col">
-  <div class="col">
-  <div class="card" style="width: 18rem;">
-<img src="hudi6.jpg" class="card-img-top" alt="movie">
-<div class="card-body">
-  <h5 class="card-title">It was DreamTeam</h5>
-  <p class="card-text">Find something for you.</p>
-  <a href="#" class="btn btn-dark">More</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row justify-content-between">
-<div class="col">
-<div class="card" style="width: 18rem;">
-<img src="hudi7.jpg" class="card-img-top" alt="marvel">
-<div class="card-body">
-<h5 class="card-title">News</h5>
-<p class="card-text">Stay up to date with the latest news.</p>
-<a href="#" class="btn btn-dark">More</a>
-</div>
-</div>
-</div>
-<div class="col">
-  <div class="col">
-  <div class="card" style="width: 18rem;">
-<img src="shirt1.jpg" class="card-img-top" alt="characters">
-<div class="card-body">
-  <h5 class="card-title">Shop</h5>
-  <p class="card-text">Find something for you.</p>
-  <a href="#" class="btn btn-dark">More</a>
-</div>
-</div>
-</div>
-</div>
-<div class="col">
-<div class="col">
-<div class="card" style="width: 18rem;">
-<img src="shirt2.jpg" class="card-img-top" alt="movie">
-<div class="card-body">
-<h5 class="card-title">It was DreamTeam</h5>
-<p class="card-text">Find something for you.</p>
-<a href="#" class="btn btn-dark">More</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row justify-content-between">
-<div class="col">
-<div class="card" style="width: 18rem;">
-<img src="shirt3.jpg" class="card-img-top" alt="marvel">
-<div class="card-body">
-<h5 class="card-title">News</h5>
-<p class="card-text">Stay up to date with the latest news.</p>
-<a href="#" class="btn btn-dark">More</a>
-</div>
-</div>
-</div>
-<div class="col">
-  <div class="col">
-  <div class="card" style="width: 18rem;">
-<img src="shirt4.jpg" class="card-img-top" alt="characters">
-<div class="card-body">
-  <h5 class="card-title">Shop</h5>
-  <p class="card-text">Find something for you.</p>
-  <a href="#" class="btn btn-dark">More</a>
-</div>
-</div>
-</div>
-</div>
-<div class="col">
-<div class="col">
-<div class="card" style="width: 18rem;">
-<img src="shirt5.jpg" class="card-img-top" alt="movie">
-<div class="card-body">
-<h5 class="card-title">It was DreamTeam</h5>
-<p class="card-text">Find something for you.</p>
-<a href="#" class="btn btn-dark">More</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-  </div>
+
 <footer>
 <div class="row-footer">
 <div class="col-footer">
@@ -211,5 +107,6 @@
 <hr>
 <p class="copyright">Dream Team @ 2022 - All Rights Reserved</p>
 </footer>
-  </body>
+  <script src="./script.js"></script>
+ </body>
   </html>
