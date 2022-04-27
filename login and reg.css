@@ -18,19 +18,19 @@ body{
 
 .container{
     position: relative;
-    max-width: 430px;
+    max-width: 400px;
     width: 100%;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0.3, 0.5);
     overflow: hidden;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .container .forms{
     display: flex;
     align-items: center;
-    height: 440px;
+    height: 478px;
     width: 200%;
     transition: height 0.2s ease;
 }
@@ -44,7 +44,7 @@ body{
 }
 
 .container.active .login{
-    margin-left: -50%;
+    margin-left: 50%;
     opacity: 0;
     transition: margin-left 0.18s ease, opacity 0.15s ease;
 }
@@ -64,17 +64,17 @@ body{
 .container .form .title{
     position: relative;
     font-size: 27px;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .form .title::before{
     content: '';
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     height: 3px;
-    width: 30px;
-    background-color: #757575;
+    width: 100%;
+    background-color: #272065;
     border-radius: 25px;
 }
 
@@ -95,11 +95,11 @@ body{
     font-size: 16px;
     border-bottom: 0.5px solid #ccc;
     border-top: 0.5px solid transparent;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .input-field input:is(:focus, :valid){
-    border-bottom-color: #696969;
+    border-bottom-color: #272065;
 }
 
 .input-field i{
@@ -138,12 +138,12 @@ body{
 
 .checkbox-content input{
     margin: 0 8px -2px 4px;
-    accent-color: #696969;
+    accent-color: #272065;
 }
 
 .form .text{
     color: #333;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .form a.text{
@@ -155,7 +155,7 @@ body{
 }
 
 .form .button{
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .form .button input{
@@ -165,16 +165,16 @@ body{
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 6px;
-    background-color: #757575;
+    background-color: #182560;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .button input:hover{
-    background-color: #182560;
+    background-color: #757575;
 }
 
 .form .login-signup{
     margin-top: 30px;
-    text-align: center;
+    text-align: сenter;
 }
