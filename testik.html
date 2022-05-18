@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+   <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+       crossorigin="anonymous"
+   />
+
+   <link rel="stylesheet" href="testik.css">
+
+
+   <script src="product.js" defer></script>
+
+
+
+
+</head>
+<body>
+
+
+
+  <nav>
+      <!--Navbar has two part the top one and the bottom one-->
+      <!--Here is top one and in this part I put logo, my account part, and the shopping cart-->
+      <div class="navbar-top">
+          <div>
+              <button id="menuButton"><i class="fas fa-bars"></i></button>
+              <!--Logo-->
+              <a href="merch.html">
+                  <h2 class="logo">QRUT</h2>
+              </a>
+          </div>
+          <div>
+              <!--My account part-->
+              <div class="account">
+                  <a href="login.html">
+                      <button class="account-btn">
+                          <i class="fas fa-user-alt"></i>
+                      </button>
+                  </a>
+              </div>
+              <div class="shopping-cart">
+                  <div class="sum-prices">
+                      <i
+                          class="fas fa-shopping-cart shoppingCartButton"
+                      ></i>
+                      <h6 id="sum-prices"></h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="navbar" id="navbar">
+          <div class="links">
+              <ul>
+                  <li class="nav-links">
+                      <a href="testik.html" class="link">Clothes</a>
+                  </li>
+                  <li class="nav-links">
+                      <a href="mobil.html" class="link">Accessories</a>
+                  </li>
+                  <li class="nav-links">
+                      <a href="mobil.html" class="link">Props</a>
+                  </li>
+                  <li class="nav-links">
+                      <a href="#" class="link">About</a>
+                  </li>
+              </ul>
+          </div>
+
+      </div>
+      <div class="producstOnCart hide">
+          <div class="overlay"></div>
+          <div class="top">
+              <button id="closeButton">
+                  <i class="fas fa-times-circle"></i>
+              </button>
+              <h3>Cart</h3>
+          </div>
+          <ul id="buyItems">
+              <h4 class="empty">Your shopping cart is empty</h4>
+              <!-- <li class="buyItem">
+      <img src="Images/producs-images/Mobiles/galaxynote10.png">
+      <div>
+        <h5>Products Name</h5>
+        <h6>$199</h6>
+        <div>
+          <button>-</button>
+          <span class="countOfProduct">1</span>
+          <button>+</button>
+        </div>
+      </div>
+    </li> -->
+          </ul>
+          <button class="btn checkout hidden">Check out</button>
+      </div>
+  </nav>
+
+
+
+  <div id="myBtnContainer">
+    <button class="butn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="butn" onclick="filterSelection('hoodie')"> Hoodie</button>
+    <button class="butn" onclick="filterSelection('sweatshirts')"> Sweatshirt</button>
+    <button class="butn" onclick="filterSelection('shirt')"> Shirt</button>
+    <button class="butn" onclick="filterSelection('outwear')"> Outwear</button>
+  </div>
+
+
+
+      <section class="products">
+
+
+          <div class="box-container">
+<div class="sort-cont">
+            <div class="container">
+               <div class="products-container">
+                 <div class="filterDiv hoodie">
+                  <div class="product" data-name="p-1">
+                     <img src="hudi1.jpg" alt="">
+                     <h3>SAQTA hoodie</h3>
+                     <div class="price">20.000 KZT</div>
+                   </div>
+                  </div>
+            <div class="filterDiv shirt">
+                  <div class="product" data-name="p-6">
+                     <img src="shirt2.jpg" alt="">
+                     <h3>JAQSY KUNDER shirt</h3>
+                     <div class="price">8.500 KZT</div>
+                   </div>
+                  </div>
+
+                    <div class="filterDiv sweatshirts">
+                  <div class="product" data-name="p-6">
+                     <img src="hudi3.jpg" alt="">
+                     <h3>SEN sweatshirt</h3>
+                     <div class="price">15.000 KZT</div>
+                   </div>
+                  </div>
+
+                  <div class="filterDiv hoodie">
+                  <div class="product" data-name="p-2">
+                     <img src="hudi2.jpg" alt="">
+                     <h3>QATYQ hoodie</h3>
+                     <div class="price">16.000-20.000 KZT</div>
+                     </div>
+                   </div>
+
+                     <div class="filterDiv shirt">
+                   <div class="product" data-name="p-6">
+                      <img src="shirt1.jpg" alt="">
+                      <h3>QR shirt</h3>
+                      <div class="price">8.500 KZT</div>
+                    </div>
+                   </div>
+
+                    <div class="filterDiv hoodie">
+                  <div class="product" data-name="p-3">
+                     <img src="xudi4.jpg" alt="">
+                     <h3>BORN QAZAQ hoodie</h3>
+                     <div class="price">18.000 KZT</div>
+                     </div>
+                   </div>
+
+                    <div class="filterDiv hoodie">
+                  <div class="product" data-name="p-4">
+                     <img src="hudi6.jpg" alt="">
+                     <h3>SEN hoodie</h3>
+                     <div class="price">18.000 KZT</div>
+                     </div>
+                  </div>
+
+                    <div class="filterDiv shirt">
+                  <div class="product" data-name="p-6">
+                     <img src="shirt3.jpg" alt="">
+                     <h3>BTBQ shirt</h3>
+                     <div class="price">8.500 KZT</div>
+                   </div>
+                  </div>
+
+                  <div class="filterDiv hoodie">
+                  <div class="product" data-name="p-5">
+                     <img src="hudi5.jpg" alt="">
+                     <h3>QMIR OZEN hoodie</h3>
+                     <div class="price">18.000 KZT</div>
+                     </div>
+                  </div>
+
+                  <div class="filterDiv hoodie">
+                  <div class="product" data-name="p-6">
+                     <img src="hudi7.jpg" alt="">
+                     <h3>KOP SOZ hoodie</h3>
+                     <div class="price">18.000 KZT</div>
+                   </div>
+                  </div>
+
+                  <div class="filterDiv shirt">
+                  <div class="product" data-name="p-6">
+                     <img src="shirt4.jpg" alt="">
+                     <h3>QREP shirt</h3>
+                     <div class="price">8.500 KZT</div>
+                   </div>
+                  </div>
+
+                  <div class="filterDiv shirt">
+                  <div class="product" data-name="p-6">
+                     <img src="shirt5.jpg" alt="">
+                     <h3>QREP shirt</h3>
+                     <div class="price">8.500 KZT</div>
+                   </div>
+                  </div>
+                  <div class="filterDiv shirt">
+                  <div class="product" data-name="p-6">
+                     <img src="shirt6.jpg" alt="">
+                     <h3>QREP shirt</h3>
+                     <div class="price">8.500 KZT</div>
+                   </div>
+                  </div>
+
+               </div>
+
+            </div>
+            </div>
+          </div>
+
+      </section>
+
+
+
+
+<div class="product">
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="hudi1.jpg" alt="hoodie">
+      <h3 class="productName">SAQTA hoodie</h3>
+      <p>Dark green hoodie with white writing</p>
+      <div class="price">20.000 KZT</div>
+      <div class="buttons">
+        <a href="#" class="buy">Buy Now</a>
+        <a href="#" class="cart" data-product-id="1">Add to Cart</a>
+        </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="hudi2.jpg" alt="hoodie">
+      <h3 class="productName">QATYQ hoodie</h3>
+      <p>Dark green hoodie with white writing</p>
+      <div class="price">20.000 KZT</div>
+      <div class="buttons">
+        <a href="#" class="buy">Buy Now</a>
+        <a href="#" class="cart" data-product-id="2">Add to Cart</a>
+            </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="hudi6.jpg" alt="hoodie">
+      <h3 class="productName">SEN hoodie</h3>
+      <p>Dark green hoodie with white writing</p>
+      <div class="price">20.000 KZT</div>
+      <div class="buttons">
+        <a href="#" class="buy">Buy Now</a>
+        <a href="#" class="cart" data-product-id="3">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="hudi6.jpg" alt="hoodie">
+      <h3>SEN hoodie</h3>
+      <p>Dark green hoodie with white writing</p>
+      <div class="price">20.000 KZT</div>
+      <div class="buttons">
+        <a href="#" class="buy">Buy Now</a>
+        <a href="#" class="cart">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="hudi1.jpg" alt="hoodie">
+      <h3>SAQTA hoodie</h3>
+      <p>Dark green hoodie with white writing</p>
+      <div class="price">20.000 KZT</div>
+      <div class="buttons">
+        <a href="#" class="buy">Buy Now</a>
+        <a href="#" class="cart">Add to Cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="hudi1.jpg" alt="hoodie">
+      <h3>SAQTA hoodie</h3>
+      <p>Dark green hoodie with white writing</p>
+      <div class="price">20.000 KZT</div>
+      <div class="buttons">
+        <a href="#" class="buy">Buy Now</a>
+        <a href="#" class="cart">Add to Cart</a>
+      </div>
+   </div>
+
+ </div>
+
+</div>
+
+
+<footer>
+<div class="row-footer">
+<div class="col-footer">
+<h1>QRUT</h1>
+</div>
+<div class="col-footer">
+  <h3>Location <div class="underline"><span></span></div></h3>
+  <p>Astana IT University</p>
+  <p>Nur-Sultan, Kazakhstan</p>
+  <p class="email-id">dream@team.com</p>
+</div>
+<div class="col-footer">
+  <h3>Navigation<div class="underline"><span></span></div></h3>
+  <ul class= "footerul">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Clothes</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Props</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</div>
+
+<div class="col-footer">
+  <h3>Please contact us!<div class="underline"><span></span></div></h3>
+  <form>
+      <i class="far fa-envelope"></i>
+      <input type="email" placeholder="Enter your email id" required>
+      <button type="submit"><i class="fas fa-arrow-right"></i></button>
+  </form>
+
+  <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-pinterest"></i>
+  </div>
+</div>
+</div>
+<hr>
+<p class="copyright">Dream Team @ 2022 - All Rights Reserved</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
