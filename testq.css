@@ -13,7 +13,8 @@ background-size: cover;
 nav {
     display: flex;
     flex-direction: column;
-    position: relative;
+    overflow: hidden;
+    webkit:sticky;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -36,7 +37,7 @@ nav .navbar-top {
     left: 100px;
     width: 150px;
     height: 75px;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
     color: black;
 }
@@ -49,7 +50,7 @@ nav .navbar-top {
     background: transparent;
     border: none;
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 #menuButton:focus {
@@ -303,13 +304,13 @@ ul .nav-links {
 
 .link {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
 }
 
 .nav-links:hover .link {
-    color: #24738b;
+    color: #4E9258;
 }
 
 .navbarResponsive .links {
@@ -321,10 +322,6 @@ ul .nav-links {
     text-align: left;
 }
 
-.navbarResponsive .searchbar form {
-    position: relative;
-    margin-left: 50px;
-}
 
 .navbarResponsive .nav-links {
     text-align: left;
@@ -334,6 +331,7 @@ ul .nav-links {
     z-index: 15;
     color: white;
 }
+
 .container {
   padding: 200px 64px 50px 64px ;
 }
@@ -623,35 +621,7 @@ hr {
     text-align: center;
 }
 
-.underline {
-    width: 100%;
-    height: 5px;
-    background: #767676;
-    border-radius: 6px;
-    position: absolute;
-    top: 50px;
-    left: 0;
-}
 
-/*.underline span {
-    width: 25px;
-    height: 100%;
-    background: #fff;
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    animation: moving 2s linear infinite
-}
-
-@keyframes moving {
-    0% {
-        left: -10px;
-    }
-    100% {
-        left: 100%;
-    }
-}*/
 
 @media (max-width: 700px){
     footer {
@@ -667,3 +637,79 @@ hr {
         flex-basis: 100%
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    nav .navbar-top {
+        padding: 0;
+    }
+
+    nav {
+        justify-content: left;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    #hearderSlide .item {
+        display: inline-block;
+        width: 100%;
+    }
+    .navbar-top .logo {
+        width: 100px;
+        float: left;
+    }
+
+    #menuButton {
+      color: #4E9258;
+        display: inline;
+    }
+
+    .navbar {
+        background-color:white;
+        width: 400px;
+        height: 55vh;
+        z-index: 10;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        transform: translateX(-500px);
+    }
+
+    .navbarResponsive {
+        transition: transform 0.5s;
+        flex-direction: column;
+        transform: translateX(0);
+    }
+
+    .navbarResponsive:after {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        background: #4E9258;
+        z-index: -1;
+    }
+
+    .nav-links:hover .link::before {
+        display: none;
+    }
+
+    .nav-links:hover .link::after {
+        display: none;
+    }
+    .nav-links:hover .link {
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width: 500px) {
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        width: 100vw;
+        height: 200px;
+    }
+  }
