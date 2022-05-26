@@ -67,6 +67,20 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+
 
 let addToCartButtons = document.getElementsByClassName('btn-primary')
 let cartContainer = document.getElementsByTagName('tbody')[0]
