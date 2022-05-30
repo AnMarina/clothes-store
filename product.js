@@ -292,7 +292,7 @@ products.forEach(product => {
 	});
 });
 
-parentElement.addEventListener('click', (e) => { // Last
+parentElement.addEventListener('click', (e) => { 
 	const isPlusButton = e.target.classList.contains('button-plus');
 	const isMinusButton = e.target.classList.contains('button-minus');
 	if (isPlusButton || isMinusButton) {
