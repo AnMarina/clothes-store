@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
 *{
-   font-family: 'Nunito', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   transition: all .2s linear;
-   text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
 }
 
 html{
-   font-size: 62.5%;
-   overflow-x: hidden;
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
-   background: #eee;
+    background: #eee;
 }
 nav {
     display: flex;
@@ -295,7 +295,7 @@ nav .navbar-top {
 .links ul {
     display: flex;
     flex-direction: row;
-list-style: none;
+    list-style: none;
 }
 
 ul .nav-links {
@@ -345,19 +345,19 @@ ul .nav-links {
 }
 
 .show-cart li {
-  display: flex;
+    display: flex;
 }
 .card {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .card-img-top {
-  width: 200px;
-  height: 200px;
-  align-self: center;
+    width: 200px;
+    height: 200px;
+    align-self: center;
 }
 
 .sort-cont {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 footer {
@@ -519,7 +519,7 @@ hr {
     }
 
     #menuButton {
-      color: #4E9258;
+        color: #4E9258;
         display: inline;
     }
 
@@ -571,4 +571,4 @@ hr {
         width: 100vw;
         height: 200px;
     }
-  }
+}
